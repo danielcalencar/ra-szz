@@ -1,0 +1,11 @@
+project,totalbugs,disagreementratio
+ActiveMQ,113,12
+Camel,109,7
+Derby,119,8
+Geronimo,118,2
+Hadoop Common,135,13
+HBase,114,5
+Mahout,20,0
+OpenJPA,53,5
+Pig,50,2
+Tuscany,66,2

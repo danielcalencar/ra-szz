@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/zombie</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.password">senha</property> 
+
+		<!-- Database connection on brain 
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://brain.cs.queensu.ca:5555/zombie</property>
+		<property name="connection.username">dalencar</property>
+		<property name="connection.password">Jk!23vvK</property> -->
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="c3p0.min_size">1</property>
+		<property name="c3p0.max_size">1</property>
+		<property name="c3p0.timeout">0</property>
+		<property name="c3p0.max_statements">0</property>
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+
+		<!-- SQL dialect -->
+		<!-- property name="dialect">org.hibernate.dialect.MySQLDialect</property -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- property name="dialect">org.hibernate.dialect.HSQLDialect</property -->
+
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">false</property>
+
+		<!-- Update the database schema on startup -->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<!-- property name="hbm2ddl.auto">create</property -->
+
+	<!-- 
+		<mapping class="br.ufrn.backhoe.repminer.model.ApacheCommit" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Commit" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Archive" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Path" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Diff" />
+		<mapping class="br.ufrn.backhoe.repminer.model.DiffChild" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Blame" />
+		<mapping class="br.ufrn.backhoe.repminer.model.CommitArchive" />
+		<mapping class="br.ufrn.backhoe.repminer.model.ComplexCommit" /> 
+		<mapping class="br.ufrn.backhoe.repminer.model.IssueContents" /> 
+		<mapping class="br.ufrn.backhoe.repminer.model.IssueActivity" />  
+		<mapping class="br.ufrn.backhoe.repminer.model.CQRequisition" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Release" /> 
+		<mapping class="br.ufrn.backhoe.repminer.model.MercurialCommit" />
+		<mapping class="br.ufrn.backhoe.repminer.model.CodeContribution" />
+	-->
+		<!-- Bug in releases 
+		<mapping class="br.ufrn.backhoe.repminer.miner.bugsinreleases.model.AuthorBugFixes" />
+		-->
+		<!-- New Entities for Exception Analysis
+		<mapping class="br.ufrn.backhoe.repminer.model.BugzillaIssue" />
+		<mapping class="br.ufrn.backhoe.repminer.model.BugzillaIssueComment" />
+		<mapping class="br.ufrn.backhoe.repminer.model.JiraIssue" />
+		<mapping class="br.ufrn.backhoe.repminer.model.JiraIssueComment" />
+		<mapping class="br.ufrn.backhoe.repminer.model.Exception" />
+		<mapping class="br.ufrn.backhoe.repminer.model.GHTorrentIssueComment" />
+		<mapping class="br.ufrn.backhoe.repminer.model.GHTorrentIssue" />
+		<mapping class="br.ufrn.backhoe.repminer.model.ExceptionalIssue" />
+		<mapping class="br.ufrn.backhoe.repminer.model.ExceptionalIssueReport" />
+		<mapping class="br.ufrn.backhoe.repminer.model.MinedException" />
+		<mapping class="br.ufrn.backhoe.repminer.model.MinedStackTrace" />
+		-->
+		<!-- New Entities for Apache Mail Lists
+		<mapping class="br.ufrn.backhoe.repminer.model.ApacheMailListMessage" />
+        -->
+		<!-- New Entities for Code Complexity Miner
+		<mapping class="br.ufrn.backhoe.repminer.model.CodeComplexity" />
+		-->
+		<!-- New Entitied for Bug in Release
+		<mapping
+			class="br.ufrn.backhoe.repminer.miner.bugsinreleases.model.BugInARelease" />
+		<mapping
+			class="br.ufrn.backhoe.repminer.miner.bugsinreleases.model.WordOccurrence" />
+		-->
+		<!-- mapping class="br.ufrn.backhoe.repminer.model.SVNLogChangedPathEntity" 
+			/ -->
+		<!-- mapping class="br.ufrn.backhoe.repminer.model.SVNLogEntity" / -->
+	</session-factory>
+
+</hibernate-configuration>

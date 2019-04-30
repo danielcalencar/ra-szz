@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/core-connector"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RA-SZZ"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-c3p0-4.1.5.Final.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-commons-annotations-4.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-core-4.1.5.Final.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-core-4.1.5.SP1-sources.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/joda-time-2.2.jar"/>
+	<classpathentry kind="lib" path="libs/svn-javahl-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="libs/svnkit-1.7.6.jar"/>
+	<classpathentry kind="lib" path="libs/svnkit-cli-1.7.6-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="libs/svnkit-javahl16-1.7.6.jar"/>
+	<classpathentry kind="lib" path="libs/svnkit-osgi-1.7.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
